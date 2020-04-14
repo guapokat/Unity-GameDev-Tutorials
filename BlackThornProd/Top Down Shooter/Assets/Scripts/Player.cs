@@ -3,6 +3,7 @@
 public class Player : MonoBehaviour
 {
     public float speed;
+    public float health;
 
     private Rigidbody2D _rigidbody;
     private Vector2 _moveAmount;
@@ -37,5 +38,15 @@ public class Player : MonoBehaviour
     {
         // Don't forget fixedDeltaTime to make frame rate independent
         _rigidbody.MovePosition(_rigidbody.position + _moveAmount * Time.fixedDeltaTime);
+    }
+
+    public void TakeDamage(int damageAmount)
+    {
+        health -= damageAmount;
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
