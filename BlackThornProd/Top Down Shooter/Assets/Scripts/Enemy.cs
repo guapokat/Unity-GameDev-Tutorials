@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
 
     public int damage;
 
-    private void Start()
+    public virtual void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
