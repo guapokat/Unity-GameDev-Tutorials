@@ -6,10 +6,12 @@ public class FlyingEnemyBullet : MonoBehaviour
     private Vector2 _targetPosition;
 
     public float speed;
+    public float lifeTime;
     public int damage;
 
     private void Start()
     {
+        Invoke("DestroyProjectile", lifeTime);
         _playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         _targetPosition = _playerScript.transform.position;
     }
@@ -24,6 +26,12 @@ public class FlyingEnemyBullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    void DestroyProjectile()
+    {
+        //Instantiate(explosion, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

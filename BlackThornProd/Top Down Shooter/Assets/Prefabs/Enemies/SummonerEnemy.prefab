@@ -612,9 +612,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d0841d9fbd4d4799bbdb4ad63f70a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 5
   player: {fileID: 0}
-  speed: 4
+  speed: 6
   timeBetweenAttacks: 2
   damage: 1
   minX: -13.24
@@ -623,8 +623,8 @@ MonoBehaviour:
   maxY: 8.86
   enemyToSummon: {fileID: 1924452791696835385, guid: bb9d5d66aa2bf4ec1a3681e61577627f,
     type: 3}
-  timeBetweenSummons: 5
-  meleeAttackSpeed: 4
+  timeBetweenSummons: 3
+  meleeAttackSpeed: 3
   stopDistance: 4
 --- !u!1 &3615340069731873974
 GameObject:
