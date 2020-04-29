@@ -617,9 +617,14 @@ MonoBehaviour:
   speed: 6
   timeBetweenAttacks: 2
   damage: 1
-  pickupChance: 60
+  pickupChance: 40
   pickups:
   - {fileID: 6420004683798168966, guid: d952b0f74e77149af91c2920d9a5aa23, type: 3}
+  healthPickupChance: 15
+  healthPickup: {fileID: 3245729409419203294, guid: 184f8ef492b144451a7838fa642b6339,
+    type: 3}
+  deathEffect: {fileID: 1168584580930308919, guid: 02d61b6b6090942c88a1f04df1c3ceb9,
+    type: 3}
   minX: -13.24
   maxX: 13.33
   minY: -9.71
